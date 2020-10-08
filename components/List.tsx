@@ -1,9 +1,9 @@
 import * as React from 'react'
+import { StuntDouble } from '../interfaces'
 import ListItem from './ListItem'
-import { User } from '../interfaces'
 
 type Props = {
-  items: User[]
+  items: StuntDouble[]
 }
 
 const List = ({ items }: Props) => (

@@ -1,15 +1,26 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Link from "next/link";
+import styled from "styled-components";
+import Layout from "../components/Layout";
+import StuntDoubleCard from "../components/StuntDoubleCard";
+import { stuntDoubleList } from "../utils/sample-data";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const CardsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
 
-export default IndexPage
+const IndexPage = () => {
+  return (
+    <Layout title="Home | Next.js + TypeScript Example">
+      <CardsContainer>
+        {stuntDoubleList.slice(0, 1).map((s) => (
+          <StuntDoubleCard {...s} />
+        ))}
+      </CardsContainer>
+    </Layout>
+  );
+};
+
+export default IndexPage;

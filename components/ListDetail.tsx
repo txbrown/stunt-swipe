@@ -1,15 +1,15 @@
 import * as React from 'react'
+import { StuntDouble } from '../interfaces'
 
-import { User } from '../interfaces'
 
 type ListDetailProps = {
-  item: User
+  item: StuntDouble
 }
 
-const ListDetail = ({ item: user }: ListDetailProps) => (
+const ListDetail = ({ item: double }: ListDetailProps) => (
   <div>
-    <h1>Detail for {user.name}</h1>
-    <p>ID: {user.id}</p>
+    <h1>Detail for {double.name}</h1>
+    <p>ID: {double.id}</p>
   </div>
 )
 

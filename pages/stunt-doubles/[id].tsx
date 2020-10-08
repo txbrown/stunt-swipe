@@ -1,12 +1,12 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
-
-import { User } from '../../interfaces'
-import { sampleUserData } from '../../utils/sample-data'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Layout from '../../components/Layout'
 import ListDetail from '../../components/ListDetail'
+import { StuntDouble } from '../../interfaces'
+import { stuntDoubleList } from '../../utils/sample-data'
+
 
 type Props = {
-  item?: User
+  item?: StuntDouble
   errors?: string
 }
 
@@ -24,7 +24,7 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
   return (
     <Layout
       title={`${
-        item ? item.name : 'User Detail'
+        item ? item.name : 'Stunt double Detail'
       } | Next.js + TypeScript Example`}
     >
       {item && <ListDetail item={item} />}
@@ -35,9 +35,9 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
 export default StaticPropsDetail
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Get the paths we want to pre-render based on users
-  const paths = sampleUserData.map((user) => ({
-    params: { id: user.id.toString() },
+  // Get the paths we want to pre-render based on stunt-double
+  const paths = stuntDoubleList.map((s) => ({
+    params: { id: s.id.toString() },
   }))
 
   // We'll pre-render only these paths at build time.
@@ -51,7 +51,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
     const id = params?.id
-    const item = sampleUserData.find((data) => data.id === Number(id))
+    const item = stuntDoubleList.find((data) => data.id === Number(id))
     // By returning { props: item }, the StaticPropsDetail component
     // will receive `item` as a prop at build time
     return { props: { item } }
