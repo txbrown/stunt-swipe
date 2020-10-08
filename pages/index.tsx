@@ -73,6 +73,8 @@ const IndexPage = () => {
               <DraggableContainer
                 key={s.id}
                 {...bind(index)}
+                // TODO: check why ts is complaining about using zIndex typed to a number
+                // @ts-ignore
                 style={{ x, y, zIndex }}
               >
                 <StuntDoubleCard {...s} liked={likes.has(s.id)} />
