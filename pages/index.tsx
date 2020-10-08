@@ -60,7 +60,6 @@ const IndexPage = () => {
     set({ x: down ? mx : 0, y: down ? my : 0 });
   });
 
-  console.log(likes);
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <CardsContainer>
