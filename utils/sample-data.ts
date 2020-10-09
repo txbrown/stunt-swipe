@@ -17,16 +17,16 @@ export const stuntDoubleList: StuntDouble[] = [
     position: "Jump from anywhere man",
     photo: {
       url:
-        "https://images.unsplash.com/photo-1548527388-e836c900b6c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1531879251-3da65dd78c99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     },
   },
   {
     id: 103,
     name: "Caroline",
-    position: "I just need a job really",
+    position: "I just need a job really...",
     photo: {
       url:
-        "https://images.unsplash.com/photo-1548527388-e836c900b6c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1520875557929-b3dde468605a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     },
   },
   {
@@ -35,7 +35,7 @@ export const stuntDoubleList: StuntDouble[] = [
     position: "Lead Full Stack Stunt Double",
     photo: {
       url:
-        "https://images.unsplash.com/photo-1548527388-e836c900b6c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1579704650564-77f58515575b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     },
   },
 ];
