@@ -12,3 +12,4 @@ yarn dev
 Prod:
 
 `yarn build && yarn start`
+.
